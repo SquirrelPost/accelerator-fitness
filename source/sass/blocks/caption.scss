@@ -1,0 +1,15 @@
+.caption {
+
+  &--bold {
+    @include font(22px, 22px);
+    font-weight: 700;
+
+    @media (min-width: $tablet-width) {
+      @include font(24px, 24px);
+    }
+
+    @media (min-width: $desktop-width) {
+      @include font(26px, 26px);
+    }
+  }
+}

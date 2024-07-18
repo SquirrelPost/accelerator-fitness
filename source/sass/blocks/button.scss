@@ -1,0 +1,65 @@
+.button {
+  @include font(12px, 12px);
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid $base-white;
+  background-color: transparent;
+  color: $base-white;
+  padding: 22px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px;
+  }
+
+  //   &:hover,
+  //   &:focus {
+  //     background-color: $primary-lighter;
+  //     color: $base-white;
+  //   }
+
+  //   &:active {
+  //     background-color: $primary-darker;
+  //     color: $base-white;
+  //   }
+
+  //   &:disabled {
+  //     background-color: $base-grey;
+  //     color: $base-white;
+  //     pointer-events: none;
+  //     cursor: default;
+  //   }
+
+  // &--secondary {
+  //     color: $base-primary;
+  //     background-color: $base-white;
+
+  //     &:disabled {
+  //       background-color: $light-grey;
+  //     }
+  // }
+
+  //   &--with-icon {
+  //     @include font(14px, 20px);
+  //     display: flex;
+  //     gap: 6px;
+
+  //     &::before {
+  //       content: "";
+  //       width: 20px;
+  //       height: 16px;
+  //       background-image: url("../../icons/card-plus.svg");
+  //     }
+  //   }
+}

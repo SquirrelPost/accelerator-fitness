@@ -1,0 +1,19 @@
+.text {
+  @include font(14px, 22px);
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    @include font(16px, 24px);
+  }
+
+  &--small {
+    @include font(14px, 20px);
+    font-weight: 400;
+
+    @media (min-width: $tablet-width) {
+      @include font(14px, 22px);
+    }
+  }
+}

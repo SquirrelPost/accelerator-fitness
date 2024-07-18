@@ -1,0 +1,122 @@
+.hero {
+  @include container;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 120px;
+  }
+}
+
+.hero__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.hero__tel {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero__content-container {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 147px;
+    padding-right: 72px;
+  }
+}
+
+.hero__text-container {
+  display: grid;
+  grid-template-columns: 113px 156px;
+  gap: 14px 21px;
+  text-align: end;
+  margin-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 113px 185px;
+    max-width: 324px;
+    padding-top: 31px;
+    padding-bottom: 50px;
+    margin-bottom: 87px;
+    gap: 10px 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 115px 270px;
+    max-width: 385px;
+    padding-top: 52px;
+    padding-bottom: 40px;
+    margin-bottom: 118px;
+    gap: 40px 0;
+  }
+}
+
+.hero__badge {
+  grid-column: 1 / 2;
+  align-self: end;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.hero__title {
+  order: 1;
+  grid-column: 2 / 3;
+  margin: 0;
+}
+
+.hero__city {
+  grid-column: 2 / 3;
+}
+
+.hero__button {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 31px;
+    left: 139px;
+    max-width: 185px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 270px;
+    bottom: 52px;
+    left: 262px;
+  }
+}
+
+.hero__image {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 500px;
+    height: 524px;
+  }
+}
