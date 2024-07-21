@@ -1,23 +1,25 @@
-/* GLOBAL */
+/* COMMON */
 @import "vendor/normalize";
-@import "./common/mixins.scss";
-@import "./common/variables.scss";
-@import "./common/global.scss";
-@import "./common/fonts.scss";
-@import "./common/visually-hidden.scss";
+@import "./common/mixins";
+@import "./common/variables";
+@import "./common/global";
+@import "./common/fonts";
+@import "./common/visually-hidden";
 
 /* BLOCKS */
-@import "./blocks/headline.scss";
-@import "./blocks/text.scss";
-@import "./blocks/caption.scss";
-@import "./blocks/button.scss";
+@import "./blocks/headline";
+@import "./blocks/text";
+@import "./blocks/caption";
+@import "./blocks/button";
+@import "./blocks/number";
+@import "./blocks/hero";
+@import "./blocks/logo";
+@import "./blocks/page";
+@import "./blocks/page-main";
+@import "./blocks/about";
+@import "./blocks/video";
 
 
-@import "./blocks/hero.scss";
-@import "./blocks/logo.scss";
-// @import "./blocks/personalisation-list.scss";
-@import "./blocks/page.scss";
-// @import "./blocks/page-main.scss";
 // @import "./blocks/slider.scss";
 // @import "./blocks/badge.scss";
 // @import "./blocks/slider-pagination.scss";

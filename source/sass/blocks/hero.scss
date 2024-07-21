@@ -1,5 +1,6 @@
 .hero {
   @include container;
+
   padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
@@ -33,6 +34,24 @@
 .hero__tel {
   color: inherit;
   text-decoration: none;
+
+  &:hover {
+    color: $color-extra;
+    opacity: 0.5;
+  }
+
+  &:focus-visible {
+    color: $color-extra;
+  }
+
+  &:active {
+    color: $base-primary;
+    text-decoration: underline;
+  }
+
+  &:disabled {
+    color: $bg-extra;
+  }
 }
 
 .hero__content-container {

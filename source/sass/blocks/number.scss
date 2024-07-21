@@ -1,0 +1,33 @@
+.number {
+  @include font(24px, 24px);
+
+  font-weight: 700;
+
+  @media (min-width: $desktop-width) {
+    @include font(40px, 40px);
+  }
+
+  &--medium {
+    @include font(48px, 72px);
+
+    @media (min-width: $tablet-width) {
+      @include font(60px, 90px);
+    }
+  }
+
+  &--large {
+    @include font(64px, 64px);
+
+    @media (min-width: $tablet-width) {
+      @include font(70px, 70px);
+    }
+  }
+
+  &--xlarge {
+    @include font(80px, 120px);
+
+    @media (min-width: $tablet-width) {
+      @include font(100px, 150px);
+    }
+  }
+}

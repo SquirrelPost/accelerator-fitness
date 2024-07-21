@@ -1,6 +1,7 @@
 .button {
   @include font(12px, 12px);
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+
+  font-family: $font-secondary;
   font-weight: 700;
   text-transform: uppercase;
   display: inline-flex;
@@ -10,6 +11,7 @@
   text-decoration: none;
   text-align: center;
   border: 2px solid $base-white;
+  border-radius: 0;
   background-color: transparent;
   color: $base-white;
   padding: 22px;
@@ -23,43 +25,56 @@
     padding: 27px;
   }
 
-  //   &:hover,
-  //   &:focus {
-  //     background-color: $primary-lighter;
-  //     color: $base-white;
-  //   }
+  &:hover {
+    background-color: $base-white;
+    color: $base-secondary;
+  }
 
-  //   &:active {
-  //     background-color: $primary-darker;
-  //     color: $base-white;
-  //   }
+  &:active {
+    background-color: $base-white;
+    color: $base-primary;
+  }
 
-  //   &:disabled {
-  //     background-color: $base-grey;
-  //     color: $base-white;
-  //     pointer-events: none;
-  //     cursor: default;
-  //   }
+  &:focus-visible {
+    background-color: $bg-opacity;
+    color: $base-secondary;
+    border-color: $base-black;
+  }
 
-  // &--secondary {
-  //     color: $base-primary;
-  //     background-color: $base-white;
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+  }
 
-  //     &:disabled {
-  //       background-color: $light-grey;
-  //     }
+  // &--button-large {
+  //   @include font(14px, 14px);
   // }
 
-  //   &--with-icon {
-  //     @include font(14px, 20px);
-  //     display: flex;
-  //     gap: 6px;
+  &--secondary {
+    color: $base-primary;
+    border-color: $base-primary;
 
-  //     &::before {
-  //       content: "";
-  //       width: 20px;
-  //       height: 16px;
-  //       background-image: url("../../icons/card-plus.svg");
-  //     }
-  //   }
+    &:hover {
+      background: $gradient-button;
+      color: $base-white;
+      border-color: transparent;
+    }
+
+    &:active {
+      background: $gradient-button;
+      color: $text-opacity;
+      border-color: transparent;
+    }
+
+    &:focus-visible {
+      border-color: $base-black;
+      background: $gradient-button-extra;
+      color: $base-white;
+    }
+
+    &:disabled {
+      opacity: 0.3;
+    }
+  }
 }

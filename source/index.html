@@ -39,12 +39,12 @@
             Кардио-зона
           </span>
         </div>
-        <button class="hero__button button">Купить абонемент</button>
+        <a class="hero__button button" href="#price">Купить абонемент</a>
         <picture>
           <source type="image/webp" media="(min-width: 1366px)"
             srcset="img/hero/hero-man-desktop@1x.webp 1x, img/hero/hero-man-desktop@2x.webp 2x">
           <source type="image/webp" srcset="img/hero/hero-man-tablet@1x.webp 1x, img/hero/hero-man-tablet@2x.webp 2x">
-          <source media="(min-width: 1366px)"
+          <source type="image/jpeg" media="(min-width: 1366px)"
             srcset="img/hero/hero-man-desktop@1x.jpg 1x, img/hero/hero-man-desktop@2x.jpg 2x">
           <img class="hero__image" src="img/hero/hero-man-tablet@1x.jpg" width="324" height="390"
             srcset="img/hero/hero-man-tablet@2x.jpg 2x"
@@ -55,6 +55,54 @@
   </header>
 
   <main class="page-main">
+    <section class="about" data-test="about">
+      <div class="about-text-container">
+        <h2 class="about__title headline headline--h3">Тренажёрный зал</h2>
+        <span class="about__caption caption caption--small">Просторный зал площадью 900 кв/м</span>
+        <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный
+          зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+        <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
+          есть несколько оборудованных залов для различных видов групповых занятий.</p>
+      </div>
+      <picture>
+        <source type="image/webp" media="(min-width: 1366px)"
+          srcset="img/gym/general-desktop@1x.webp 1x, img/gym/general-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/gym/general-tablet@1x.webp 1x, img/gym/general-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/gym/general-mobile@1x.webp 1x, img/gym/general-mobile@2x.webp 2x">
+        <source type="image/jpeg" media="(min-width: 1366px)"
+          srcset="img/gym/general-desktop@1x.jpg 1x, img/gym/general-desktop@2x.jpg 2x">
+        <source type="image/jpeg" media="(min-width: 768px)" srcset="img/gym/general-tablet@1x.jpg 1x, img/gym/general-tablet@2x.jpg 2x">
+        <img class="about__photo" src="img/gym/general-mobile@1x.jpg" width="320" height="280"
+          srcset="img/gym/general-mobile@2x.jpg 2x"
+          alt="Просторный светлый тренажёрный зал с большим количеством разнообразных тренажёров черно-красного цвета.">
+      </picture>
+      <div class="about__video video">
+        <div class="video__background-container">
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)"
+              srcset="img/gym/video-desktop@1x.webp 1x, img/gym/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/gym/video-tablet@1x.webp 1x, img/gym/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/gym/video-mobile@1x.webp 1x, img/gym/video-mobile@2x.webp 2x">
+            <source type="image/jpeg" media="(min-width: 1366px)"
+              srcset="img/gym/video-desktop@1x.jpg 1x, img/gym/video-desktop@2x.jpg 2x">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="img/gym/video-tablet@1x.jpg 1x, img/gym/video-tablet@2x.jpg 2x">
+            <img class="video__background" src="img/gym/video-mobile@1x.jpg" width="320" height="170"
+              srcset="img/gym/video-mobile@2x.jpg 2x"
+              alt="Тренажёрный зал с большим количеством спортивного оборудования.">
+          </picture>
+          <button class="video__button" type="button">
+            <span class="visually-hidden">Кнопка включения видео.</span>
+          </button>
+        </div>
+        <iframe width="320" height="170" src="https://www.youtube.com/embed/9TZXsZItgdw?si=yOuFEYG4b5iNmG9z"
+          title="Бесплатные интерактивные онлайн-курсы."
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
+        </iframe>
+      </div>
+    </section>
   </main>
 
   <footer class="footer" data-test="footer">
