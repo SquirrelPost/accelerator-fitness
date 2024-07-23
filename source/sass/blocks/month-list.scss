@@ -1,0 +1,23 @@
+.month-list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-shadow: inset 0px -4px 0px -2px $border-opacity;
+}
+
+.month-list__item {
+  color: $primary-opacity;
+  padding: 5px 0;
+
+  &--current {
+    color: $base-primary;
+    border-bottom: 2px solid $tabs-state;
+  }
+}
+
+.month-list__tab-line {
+  color: inherit;
+  text-decoration: none;
+  padding: 10px 0;
+}

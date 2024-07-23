@@ -1,6 +1,5 @@
 .caption {
   @include font(20px, 20px);
-
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
@@ -13,7 +12,6 @@
 
   &--bold {
     @include font(22px, 22px);
-
     font-weight: 700;
 
     @media (min-width: $tablet-width) {

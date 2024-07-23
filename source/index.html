@@ -72,7 +72,8 @@
         <source type="image/webp" srcset="img/gym/general-mobile@1x.webp 1x, img/gym/general-mobile@2x.webp 2x">
         <source type="image/jpeg" media="(min-width: 1366px)"
           srcset="img/gym/general-desktop@1x.jpg 1x, img/gym/general-desktop@2x.jpg 2x">
-        <source type="image/jpeg" media="(min-width: 768px)" srcset="img/gym/general-tablet@1x.jpg 1x, img/gym/general-tablet@2x.jpg 2x">
+        <source type="image/jpeg" media="(min-width: 768px)"
+          srcset="img/gym/general-tablet@1x.jpg 1x, img/gym/general-tablet@2x.jpg 2x">
         <img class="about__photo" src="img/gym/general-mobile@1x.jpg" width="320" height="280"
           srcset="img/gym/general-mobile@2x.jpg 2x"
           alt="Просторный светлый тренажёрный зал с большим количеством разнообразных тренажёров черно-красного цвета.">
@@ -87,7 +88,8 @@
             <source type="image/webp" srcset="img/gym/video-mobile@1x.webp 1x, img/gym/video-mobile@2x.webp 2x">
             <source type="image/jpeg" media="(min-width: 1366px)"
               srcset="img/gym/video-desktop@1x.jpg 1x, img/gym/video-desktop@2x.jpg 2x">
-            <source type="image/jpeg" media="(min-width: 768px)" srcset="img/gym/video-tablet@1x.jpg 1x, img/gym/video-tablet@2x.jpg 2x">
+            <source type="image/jpeg" media="(min-width: 768px)"
+              srcset="img/gym/video-tablet@1x.jpg 1x, img/gym/video-tablet@2x.jpg 2x">
             <img class="video__background" src="img/gym/video-mobile@1x.jpg" width="320" height="170"
               srcset="img/gym/video-mobile@2x.jpg 2x"
               alt="Тренажёрный зал с большим количеством спортивного оборудования.">
@@ -101,6 +103,66 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
         </iframe>
+      </div>
+    </section>
+    <section class="price" id="price" data-test="price">
+      <div class="price__container">
+        <h2 class="price__title headline headline--h3">Абонементы</h2>
+        <ul class="price__month-list month-list">
+          <li class="month-list__item month-list__item--current">
+            <a class="month-list__tab-line" href="#">
+              <span class="month-list__text text text--tab-line">1 месяц</span>
+            </a>
+          </li>
+          <li class="month-list__item">
+            <a class="month-list__tab-line" href="#">
+              <span class="month-list__text text text--tab-line">6 месяцев</span>
+            </a>
+          </li>
+          <li class="month-list__item">
+            <a class="month-list__tab-line" href="#">
+              <span class="month-list__text text text--tab-line">12 месяцев</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="price__abonnements">
+          <li class="price__abonnement-card card">
+            <h3 class="card__title caption caption--bold">С тренером</h3>
+            <p class="card__text">12 занятий</p>
+            <p class="card__price number number--medium">
+              <span class="card__price-shadow number number--xlarge" aria-hidden="true">5000</span>
+              <span class="card__price-value">5000</span>
+              <span class="visually-hidden"> рублей.</span>
+            </p>
+            <a class="card__button button button--secondary" href="#">
+              <span class="card__button-text">Купить абонемент</span>
+            </a>
+          </li>
+          <li class="price__abonnement-card card">
+            <h3 class="card__title caption caption--bold">Дневной</h3>
+            <p class="card__text">с 8:00 до 17:00</p>
+            <p class="card__price number number--medium">
+              <span class="card__price-shadow number number--xlarge" aria-hidden="true">1700</span>
+              <span class="card__price-value">1700</span>
+              <span class="visually-hidden"> рублей.</span>
+            </p>
+            <a class="card__button button button--secondary" href="#">
+              <span class="card__button-text">Купить абонемент</span>
+            </a>
+          </li>
+          <li class="price__abonnement-card card">
+            <h3 class="card__title caption caption--bold">Полный день</h3>
+            <p class="card__text">с 8:00 до 22:00</p>
+            <p class="card__price number number--medium">
+              <span class="card__price-shadow number number--xlarge" aria-hidden="true">2700</span>
+              <span class="card__price-value">2700</span>
+              <span class="visually-hidden"> рублей.</span>
+            </p>
+            <a class="card__button button button--secondary" href="#">
+              <span class="card__button-text">Купить абонемент</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
   </main>

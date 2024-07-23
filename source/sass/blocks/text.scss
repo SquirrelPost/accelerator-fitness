@@ -1,6 +1,5 @@
 .text {
   @include font(14px, 22px);
-
   font-family: $font-secondary;
   font-style: normal;
   font-weight: 300;
@@ -11,7 +10,6 @@
 
   &--small {
     @include font(14px, 20px);
-
     font-weight: 400;
 
     @media (min-width: $tablet-width) {
@@ -29,7 +27,6 @@
 
   &--tab-line {
     @include font(16px, 16px);
-
     font-weight: 400;
 
     @media (min-width: $tablet-width) {
@@ -43,7 +40,6 @@
 
   &--tab-button {
     @include font(16px, 16px);
-
     font-weight: 400;
 
     @media (min-width: $tablet-width) {

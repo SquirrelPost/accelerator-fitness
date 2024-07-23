@@ -1,0 +1,22 @@
+.price {
+  background-color: $bg-extra;
+  text-align: center;
+}
+
+.price__container {
+  @include container;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: grid;
+  gap: 30px;
+}
+
+.price__title {
+  margin: 0;
+}
+
+.price__abonnements {
+  @include list-reset;
+  display: grid;
+  gap: 35px;
+}
