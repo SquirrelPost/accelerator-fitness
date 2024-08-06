@@ -1,10 +1,27 @@
 .card {
-  padding: 50px 42px;
+  padding: 43px 35px;
   background-color: $base-white;
   max-width: 290px;
   display: flex;
   flex-direction: column;
   gap: 18px;
+  border: 7px solid transparent;
+
+  &:hover,
+  &:focus-within {
+    border-image-source: $gradient-border;
+    border-image-slice: 7;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 380px;
+    width: 100%;
+    padding: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 360px;
+  }
 }
 
 .card__title {
@@ -47,4 +64,11 @@
   bottom: 0;
   transform: translateX(-50%);
   color: $price-shadow;
+  opacity: 0.48;
+}
+
+.card__button {
+  @media (min-width: $tablet-width) {
+    max-width: 250px;
+  }
 }

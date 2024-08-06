@@ -4,20 +4,54 @@
   flex-wrap: wrap;
   justify-content: space-between;
   box-shadow: inset 0px -4px 0px -2px $border-opacity;
-}
+  max-width: 290px;
+  width: 100%;
 
-.month-list__item {
-  color: $primary-opacity;
-  padding: 5px 0;
+  @media (min-width: $tablet-width) {
+    max-width: 310px;
+  }
 
-  &--current {
-    color: $base-primary;
-    border-bottom: 2px solid $tabs-state;
+  @media (min-width: $desktop-width) {
+    max-width: 350px;
   }
 }
 
+.month-list__item {
+  padding: 5px 0;
+}
+
 .month-list__tab-line {
-  color: inherit;
+  color: $primary-opacity;
   text-decoration: none;
-  padding: 10px 0;
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+
+  &--current {
+    color: $base-primary;
+    border-bottom-color: $tabs-state;
+  }
+
+  &[href]:hover {
+    color: $primary-opacity-dark;
+    border-bottom-color: $base-border;
+  }
+
+  &[href]:focus-visible {
+    color: $base-primary;
+    border-bottom-color: $base-primary;
+    outline-offset: 2px;
+  }
+
+  &[href]:active {
+    color: $base-primary;
+    border-bottom-color: $tabs-state;
+  }
+
+  &:disabled {
+    color: $base-primary;
+    border-bottom-color: $base-primary;
+    opacity: 0.3;
+    pointer-events: none;
+    cursor: default;
+  }
 }

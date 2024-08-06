@@ -7,8 +7,57 @@
   @include container;
   padding-top: 40px;
   padding-bottom: 40px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 30px;
+  z-index: 1;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 12px;
+      right: -14px;
+      width: 275px;
+      height: 328px;
+      background-image: url("../img/background/weight-plates-tablet@1x.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      z-index: -1;
+      transform: rotate(-30deg);
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background/weight-plates-tablet@2x.png");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      gap: 20px;
+
+      &::after {
+        background-image: url("../img/background/weight-plates-desktop@1x.png");
+        bottom: 8px;
+        right: -93px;
+        width: 321px;
+        height: 384px;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/background/weight-plates-desktop@2x.png");
+        }
+      }
+    }
+  }
 }
 
 .price__title {
@@ -19,4 +68,17 @@
   @include list-reset;
   display: grid;
   gap: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    gap: 40px;
+    width: 100%;
+    max-width: 380px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
+    max-width: 1160px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
